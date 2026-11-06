@@ -1,0 +1,615 @@
+{
+  "samples": [
+    {
+      "tag": "BODY",
+      "text": "CONTACT@FAKTORY.FR CONTACT MENU ACCUEIL NOS LIEUX UNIQUES ORGANISEZ VOTRE ÉVÉNEM",
+      "fontFamily": "\"Mango Grotesk\"",
+      "fontSize": "30px",
+      "fontWeight": "400",
+      "lineHeight": "45px",
+      "letterSpacing": "normal",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(77, 0, 7)"
+    },
+    {
+      "tag": "NAV",
+      "text": "CONTACT@FAKTORY.FR CONTACT MENU ACCUEIL NOS LIEUX UNIQUES ORGANISEZ VOTRE ÉVÉNEM",
+      "fontFamily": "\"Mango Grotesk Title\"",
+      "fontSize": "30px",
+      "fontWeight": "400",
+      "lineHeight": "45px",
+      "letterSpacing": "normal",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "tag": "A",
+      "text": "CONTACT@FAKTORY.FR CONTACT",
+      "fontFamily": "\"Mango Grotesk Title\"",
+      "fontSize": "30px",
+      "fontWeight": "400",
+      "lineHeight": "45px",
+      "letterSpacing": "normal",
+      "color": "rgb(255, 98, 51)",
+      "bg": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "tag": "A",
+      "text": "",
+      "fontFamily": "\"Mango Grotesk Title\"",
+      "fontSize": "30px",
+      "fontWeight": "400",
+      "lineHeight": "45px",
+      "letterSpacing": "normal",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "tag": "A",
+      "text": "ACCUEIL",
+      "fontFamily": "\"Mango Grotesk Title\"",
+      "fontSize": "28px",
+      "fontWeight": "400",
+      "lineHeight": "28px",
+      "letterSpacing": "normal",
+      "color": "rgb(255, 98, 51)",
+      "bg": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "tag": "A",
+      "text": "NOS LIEUX UNIQUES",
+      "fontFamily": "\"Mango Grotesk Title\"",
+      "fontSize": "28px",
+      "fontWeight": "400",
+      "lineHeight": "28px",
+      "letterSpacing": "normal",
+      "color": "rgb(255, 98, 51)",
+      "bg": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "tag": "A",
+      "text": "ORGANISEZ VOTRE ÉVÉNEMENT",
+      "fontFamily": "\"Mango Grotesk Title\"",
+      "fontSize": "28px",
+      "fontWeight": "400",
+      "lineHeight": "28px",
+      "letterSpacing": "normal",
+      "color": "rgb(255, 98, 51)",
+      "bg": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "tag": "A",
+      "text": "QUI SOMMES NOUS ?",
+      "fontFamily": "\"Mango Grotesk Title\"",
+      "fontSize": "28px",
+      "fontWeight": "400",
+      "lineHeight": "28px",
+      "letterSpacing": "normal",
+      "color": "rgb(255, 98, 51)",
+      "bg": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "tag": "A",
+      "text": "REJOIGNEZ LA TEAM FAKTORY",
+      "fontFamily": "\"Mango Grotesk Title\"",
+      "fontSize": "28px",
+      "fontWeight": "400",
+      "lineHeight": "28px",
+      "letterSpacing": "normal",
+      "color": "rgb(255, 98, 51)",
+      "bg": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "tag": "A",
+      "text": "RESTONS EN CONTACT",
+      "fontFamily": "\"Mango Grotesk Title\"",
+      "fontSize": "28px",
+      "fontWeight": "400",
+      "lineHeight": "28px",
+      "letterSpacing": "normal",
+      "color": "rgb(255, 98, 51)",
+      "bg": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "tag": "SECTION",
+      "text": "STRASBOURG  BRASSERIES RESTAURANTS HÔTELS BARS BRASSERIES RESTAURANTS HÔTELS BAR",
+      "fontFamily": "\"Mango Grotesk\"",
+      "fontSize": "30px",
+      "fontWeight": "400",
+      "lineHeight": "45px",
+      "letterSpacing": "normal",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(77, 0, 7)"
+    },
+    {
+      "tag": "P",
+      "text": "STRASBOURG",
+      "fontFamily": "\"Mango Grotesk Title\"",
+      "fontSize": "160px",
+      "fontWeight": "400",
+      "lineHeight": "128px",
+      "letterSpacing": "normal",
+      "color": "rgb(255, 98, 51)",
+      "bg": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "tag": "SECTION",
+      "text": "FAKTORY CREATEUR DE LIEN SOCIAL - LE GROUPE - QUI SOMMES NOUS ? - LE GROUPE - QU",
+      "fontFamily": "\"Mango Grotesk\"",
+      "fontSize": "30px",
+      "fontWeight": "400",
+      "lineHeight": "45px",
+      "letterSpacing": "normal",
+      "color": "rgb(255, 98, 51)",
+      "bg": "rgb(77, 0, 7)"
+    },
+    {
+      "tag": "H2",
+      "text": "FAKTORY CREATEUR DE LIEN SOCIAL",
+      "fontFamily": "\"Mango Grotesk Title\"",
+      "fontSize": "409px",
+      "fontWeight": "400",
+      "lineHeight": "306.75px",
+      "letterSpacing": "normal",
+      "color": "rgb(255, 98, 51)",
+      "bg": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "tag": "SECTION",
+      "text": "ON BOUGE, ON TRINQUE, ON VIT.  Notre histoire se raconte au bruit des verres qui",
+      "fontFamily": "\"Mango Grotesk\"",
+      "fontSize": "30px",
+      "fontWeight": "400",
+      "lineHeight": "45px",
+      "letterSpacing": "normal",
+      "color": "rgb(255, 98, 51)",
+      "bg": "rgb(11, 37, 47)"
+    },
+    {
+      "tag": "H2",
+      "text": "ON BOUGE, ON TRINQUE, ON VIT.",
+      "fontFamily": "\"Mango Grotesk Title\"",
+      "fontSize": "120px",
+      "fontWeight": "400",
+      "lineHeight": "108px",
+      "letterSpacing": "normal",
+      "color": "rgb(255, 98, 51)",
+      "bg": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "tag": "P",
+      "text": "Notre histoire se raconte au bruit des verres qui trinquent et des rires qui écl",
+      "fontFamily": "\"Mango Grotesk\"",
+      "fontSize": "34px",
+      "fontWeight": "400",
+      "lineHeight": "34px",
+      "letterSpacing": "normal",
+      "color": "rgb(255, 98, 51)",
+      "bg": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "tag": "A",
+      "text": "DÉCOUVREZ NOS 13 ÉTABLISSEMENTS",
+      "fontFamily": "\"Mango Grotesk Title\"",
+      "fontSize": "60px",
+      "fontWeight": "400",
+      "lineHeight": "54px",
+      "letterSpacing": "normal",
+      "color": "rgb(255, 98, 51)",
+      "bg": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "tag": "A",
+      "text": "REJOIGNEZ NOTRE ÉQUIPE DE 350 PASSIONNÉS",
+      "fontFamily": "\"Mango Grotesk Title\"",
+      "fontSize": "60px",
+      "fontWeight": "400",
+      "lineHeight": "54px",
+      "letterSpacing": "normal",
+      "color": "rgb(255, 98, 51)",
+      "bg": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "tag": "A",
+      "text": "ORGANISEZ VOTRE ÉVÉNEMENT",
+      "fontFamily": "\"Mango Grotesk Title\"",
+      "fontSize": "60px",
+      "fontWeight": "400",
+      "lineHeight": "54px",
+      "letterSpacing": "normal",
+      "color": "rgb(255, 98, 51)",
+      "bg": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "tag": "SECTION",
+      "text": "NOS  Du café du matin au dernier verre de la nuit, en famille ou entre pro, nos ",
+      "fontFamily": "\"Mango Grotesk\"",
+      "fontSize": "30px",
+      "fontWeight": "400",
+      "lineHeight": "45px",
+      "letterSpacing": "normal",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(244, 233, 237)"
+    },
+    {
+      "tag": "P",
+      "text": "Du café du matin au dernier verre de la nuit, en famille ou entre pro, nos établ",
+      "fontFamily": "\"Mango Grotesk\"",
+      "fontSize": "34px",
+      "fontWeight": "400",
+      "lineHeight": "34px",
+      "letterSpacing": "normal",
+      "color": "rgb(255, 98, 51)",
+      "bg": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "tag": "P",
+      "text": "Du café du matin au dernier verre de la nuit, en famille ou entre pro, nos établ",
+      "fontFamily": "\"Mango Grotesk\"",
+      "fontSize": "34px",
+      "fontWeight": "400",
+      "lineHeight": "34px",
+      "letterSpacing": "normal",
+      "color": "rgb(255, 98, 51)",
+      "bg": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "tag": "A",
+      "text": "",
+      "fontFamily": "\"Mango Grotesk\"",
+      "fontSize": "30px",
+      "fontWeight": "400",
+      "lineHeight": "45px",
+      "letterSpacing": "normal",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "tag": "H2",
+      "text": "LE METEOR",
+      "fontFamily": "\"Mango Grotesk Title\"",
+      "fontSize": "60px",
+      "fontWeight": "400",
+      "lineHeight": "54px",
+      "letterSpacing": "normal",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "tag": "P",
+      "text": "+ BAR + RESTAURATION + ÉVÈNEMENTS",
+      "fontFamily": "\"Mango Grotesk Title\"",
+      "fontSize": "40px",
+      "fontWeight": "400",
+      "lineHeight": "36px",
+      "letterSpacing": "normal",
+      "color": "rgb(150, 25, 36)",
+      "bg": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "tag": "P",
+      "text": "10 rue du 22 Novembre, 67000 Strasbourg",
+      "fontFamily": "\"Mango Grotesk\"",
+      "fontSize": "30px",
+      "fontWeight": "400",
+      "lineHeight": "28.5px",
+      "letterSpacing": "normal",
+      "color": "rgb(150, 25, 36)",
+      "bg": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "tag": "P",
+      "text": "OUVERT TOUS LES JOURS DE 7H À 1H30",
+      "fontFamily": "\"Mango Grotesk\"",
+      "fontSize": "30px",
+      "fontWeight": "400",
+      "lineHeight": "28.5px",
+      "letterSpacing": "normal",
+      "color": "rgb(150, 25, 36)",
+      "bg": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "tag": "A",
+      "text": "+ INFO",
+      "fontFamily": "\"Mango Grotesk Title\"",
+      "fontSize": "40px",
+      "fontWeight": "400",
+      "lineHeight": "40px",
+      "letterSpacing": "normal",
+      "color": "rgb(11, 37, 47)",
+      "bg": "rgb(65, 255, 220)"
+    },
+    {
+      "tag": "A",
+      "text": "RESERVER",
+      "fontFamily": "\"Mango Grotesk Title\"",
+      "fontSize": "60px",
+      "fontWeight": "400",
+      "lineHeight": "48px",
+      "letterSpacing": "normal",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "tag": "A",
+      "text": "",
+      "fontFamily": "\"Mango Grotesk\"",
+      "fontSize": "30px",
+      "fontWeight": "400",
+      "lineHeight": "45px",
+      "letterSpacing": "normal",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "tag": "H2",
+      "text": "MADAME C",
+      "fontFamily": "\"Mango Grotesk Title\"",
+      "fontSize": "60px",
+      "fontWeight": "400",
+      "lineHeight": "54px",
+      "letterSpacing": "normal",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "tag": "P",
+      "text": "+ BAR + RESTAURATION + HÔTEL",
+      "fontFamily": "\"Mango Grotesk Title\"",
+      "fontSize": "40px",
+      "fontWeight": "400",
+      "lineHeight": "36px",
+      "letterSpacing": "normal",
+      "color": "rgb(150, 25, 36)",
+      "bg": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "tag": "P",
+      "text": "10 rue des Sœurs, 67000 Strasbourg",
+      "fontFamily": "\"Mango Grotesk\"",
+      "fontSize": "30px",
+      "fontWeight": "400",
+      "lineHeight": "28.5px",
+      "letterSpacing": "normal",
+      "color": "rgb(150, 25, 36)",
+      "bg": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "tag": "P",
+      "text": "OUVERT TOUS LES JOURS : DIMANCHE / LUNDI / MAR : 7H - 1H30 MERCREDI / JEUDI : 7H",
+      "fontFamily": "\"Mango Grotesk\"",
+      "fontSize": "30px",
+      "fontWeight": "400",
+      "lineHeight": "28.5px",
+      "letterSpacing": "normal",
+      "color": "rgb(150, 25, 36)",
+      "bg": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "tag": "A",
+      "text": "+ INFO",
+      "fontFamily": "\"Mango Grotesk Title\"",
+      "fontSize": "40px",
+      "fontWeight": "400",
+      "lineHeight": "40px",
+      "letterSpacing": "normal",
+      "color": "rgb(11, 37, 47)",
+      "bg": "rgb(65, 255, 220)"
+    },
+    {
+      "tag": "A",
+      "text": "RESERVER",
+      "fontFamily": "\"Mango Grotesk Title\"",
+      "fontSize": "60px",
+      "fontWeight": "400",
+      "lineHeight": "48px",
+      "letterSpacing": "normal",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "tag": "A",
+      "text": "",
+      "fontFamily": "\"Mango Grotesk\"",
+      "fontSize": "30px",
+      "fontWeight": "400",
+      "lineHeight": "45px",
+      "letterSpacing": "normal",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "tag": "H2",
+      "text": "DOMAINE LES BRACONNIERS",
+      "fontFamily": "\"Mango Grotesk Title\"",
+      "fontSize": "60px",
+      "fontWeight": "400",
+      "lineHeight": "54px",
+      "letterSpacing": "normal",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "tag": "P",
+      "text": "DOMAINE VITICOLE VAL DE LOIRE",
+      "fontFamily": "\"Mango Grotesk Title\"",
+      "fontSize": "40px",
+      "fontWeight": "400",
+      "lineHeight": "36px",
+      "letterSpacing": "normal",
+      "color": "rgb(150, 25, 36)",
+      "bg": "rgba(0, 0, 0, 0)"
+    }
+  ],
+  "navLinks": [
+    {
+      "href": "mailto:contact@faktory.fr",
+      "text": "CONTACT@FAKTORY.FR\nCONTACT"
+    },
+    {
+      "href": "https://faktory.fr/",
+      "text": ""
+    },
+    {
+      "href": "https://faktory.fr/",
+      "text": "ACCUEIL"
+    },
+    {
+      "href": "https://faktory.fr/etablissements/",
+      "text": "NOS LIEUX UNIQUES"
+    },
+    {
+      "href": "https://faktory.fr/vos-evenements/",
+      "text": "ORGANISEZ VOTRE ÉVÉNEMENT"
+    },
+    {
+      "href": "https://faktory.fr/a-propos/",
+      "text": "QUI SOMMES NOUS ?"
+    },
+    {
+      "href": "https://faktory.fr/recrutement/",
+      "text": "REJOIGNEZ LA TEAM FAKTORY"
+    },
+    {
+      "href": "https://faktory.fr/page-contact/",
+      "text": "RESTONS EN CONTACT"
+    },
+    {
+      "href": "https://faktory.fr//etablissements/",
+      "text": "DÉCOUVREZ NOS 13 ÉTABLISSEMENTS"
+    },
+    {
+      "href": "https://faktory.fr//recrutement/",
+      "text": "REJOIGNEZ NOTRE ÉQUIPE DE 350 PASSIONNÉS"
+    },
+    {
+      "href": "https://faktory.fr//vos-evenements/",
+      "text": "ORGANISEZ VOTRE ÉVÉNEMENT"
+    },
+    {
+      "href": "https://faktory.fr/etablissements/le-meteor-2-2/",
+      "text": ""
+    },
+    {
+      "href": "https://faktory.fr/etablissements/le-meteor-2-2/",
+      "text": "+ INFO"
+    },
+    {
+      "href": "https://faktory.fr/etablissements/madame-c-2/",
+      "text": ""
+    },
+    {
+      "href": "https://faktory.fr/etablissements/madame-c-2/",
+      "text": "+ INFO"
+    },
+    {
+      "href": "https://faktory.fr/etablissements/rimini-2/",
+      "text": ""
+    },
+    {
+      "href": "https://faktory.fr/etablissements/rimini-2/",
+      "text": "+ INFO"
+    },
+    {
+      "href": "https://faktory.fr/etablissements/rimini/",
+      "text": ""
+    },
+    {
+      "href": "https://faktory.fr/etablissements/rimini/",
+      "text": "+ INFO"
+    },
+    {
+      "href": "https://faktory.fr/etablissements/bravo-la-tavola-sociale/",
+      "text": ""
+    },
+    {
+      "href": "https://faktory.fr/etablissements/bravo-la-tavola-sociale/",
+      "text": "+ INFO"
+    },
+    {
+      "href": "https://faktory.fr/etablissements/lalsace-a-boire/",
+      "text": ""
+    },
+    {
+      "href": "https://faktory.fr/etablissements/lalsace-a-boire/",
+      "text": "+ INFO"
+    },
+    {
+      "href": "https://faktory.fr/etablissements/le-troquet-des-kneckes/",
+      "text": ""
+    },
+    {
+      "href": "https://faktory.fr/etablissements/le-troquet-des-kneckes/",
+      "text": "+ INFO"
+    },
+    {
+      "href": "https://faktory.fr/etablissements/le-schallern/",
+      "text": ""
+    },
+    {
+      "href": "https://faktory.fr/etablissements/le-schallern/",
+      "text": "+ INFO"
+    },
+    {
+      "href": "https://faktory.fr/etablissements/le-purgatoire/",
+      "text": ""
+    },
+    {
+      "href": "https://faktory.fr/etablissements/le-purgatoire/",
+      "text": "+ INFO"
+    },
+    {
+      "href": "https://faktory.fr/etablissements/la-cuvette-de-bouillons/",
+      "text": ""
+    },
+    {
+      "href": "https://faktory.fr/etablissements/la-cuvette-de-bouillons/",
+      "text": "+ INFO"
+    },
+    {
+      "href": "https://faktory.fr/etablissements/le-mannele/",
+      "text": ""
+    },
+    {
+      "href": "https://faktory.fr/etablissements/le-mannele/",
+      "text": "+ INFO"
+    },
+    {
+      "href": "https://faktory.fr/etablissements/les-aviateurs/",
+      "text": ""
+    },
+    {
+      "href": "https://faktory.fr/etablissements/les-aviateurs/",
+      "text": "+ INFO"
+    },
+    {
+      "href": "https://faktory.fr/etablissements/le-coin-des-kneckes/",
+      "text": ""
+    },
+    {
+      "href": "https://faktory.fr/etablissements/le-coin-des-kneckes/",
+      "text": "+ INFO"
+    },
+    {
+      "href": "https://faktory.fr//vos-evenements/",
+      "text": "JE DEMANDE UN DEVIS"
+    },
+    {
+      "href": "https://faktory.fr/mentions-legales/",
+      "text": "MENTIONS LÉGALES"
+    },
+    {
+      "href": "https://faktory.fr/politique-de-confidentialite/",
+      "text": "POLITIQUE DE CONFIDENTIALITÉ"
+    }
+  ],
+  "stylesheets": [
+    "img:is([sizes=auto i],[sizes^=\"auto,\" i]){contain-intrinsic-size:3000px 1500px}",
+    ":root{--wp-block-synced-color:#7a00df;--wp-block-synced-color--rgb:122,0,223;--wp-bound-block-color:var(--wp-block-synced-color);--wp-editor-canvas-background:#ddd;--wp-admin-theme-color:#007cba;--wp-admin-theme-color--rgb:0,124,186;--wp-admin-theme-color-darker-10:#006ba1;--wp-admin-theme-color-darker-10--rgb:0,107,160.5;--wp-admin-theme-color-darker-20:#005a87;--wp-admin-theme-color-darker-20--rgb:0,90,135;--wp-admin-border-width-focus:2px}@media (min-resolution:192dpi){:root{--wp-admin-border",
+    ".wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}",
+    ":root{--wp--preset--aspect-ratio--square:1;--wp--preset--aspect-ratio--4-3:4/3;--wp--preset--aspect-ratio--3-4:3/4;--wp--preset--aspect-ratio--3-2:3/2;--wp--preset--aspect-ratio--2-3:2/3;--wp--preset--aspect-ratio--16-9:16/9;--wp--preset--aspect-ratio--9-16:9/16;--wp--preset--color--black:#000000;--wp--preset--color--cyan-bluish-gray:#abb8c3;--wp--preset--color--white:#ffffff;--wp--preset--color--pale-pink:#f78da7;--wp--preset--color--vivid-red:#cf2e2e;--wp--preset--color--luminous-vivid-orange:",
+    "https://faktory.fr/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=6.2.4.1",
+    "https://faktory.fr/wp-content/themes/faktory/style.css?ver=1.0.0.1784829851",
+    "https://faktory.fr/wp-content/themes/faktory/dist/style.min.css?ver=1.0.0.1784829851"
+  ]
+}

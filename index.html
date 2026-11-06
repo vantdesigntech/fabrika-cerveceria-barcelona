@@ -1,0 +1,1630 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FÀBRIKA BARCELONA — Cerveseria Artesana &amp; Taproom Social · Poblenou</title>
+  <meta name="description" content="En Fàbrika creamos espacios de convivencia en el corazón de El Poblenou, Barcelona. Cerveza artesana recién tirada, brasa, música y cultura líquida desde 2012." />
+
+  <style>
+    /* ==========================================================================
+       01. EXACT ORIGINAL FONTS EXTRACTED FROM FAKTORY
+       ========================================================================== */
+    @font-face {
+      font-family: "Mango Grotesk";
+      src: url("./fonts/Mango-Grotesk.ttf") format("truetype");
+      font-weight: 400;
+      font-style: normal;
+      font-display: block;
+    }
+
+    @font-face {
+      font-family: "Mango Grotesk Title";
+      src: url("./fonts/Mango-Grotesk-Title.ttf") format("truetype");
+      font-weight: 400;
+      font-style: normal;
+      font-display: block;
+    }
+
+    /* ==========================================================================
+       02. COLOR PALETTE TOKENS (100% Exact Match to Awwwards Faktory)
+       ========================================================================== */
+    :root {
+      --petrol: #0B252F;          /* Primary nocturnal teal/petrol canvas */
+      --petrol-deep: #02141B;     /* Deepest shadow petrol */
+      --orange: #FF6233;          /* Primary electric terracotta orange */
+      --orange-soft: #FF7657;     /* Thin manifesto copper-orange */
+      --orange-bright: #FC450E;   /* Intense neon orange accent */
+      --burgundy: #780F18;        /* Deep cherry-malt ink on orange timeline */
+      --burgundy-dark: #4D0007;   /* Darkest wine/malt cellar background */
+      --cream: #F4E9ED;           /* Warm malt-foam cream for ribbon & recruitment */
+      --silver: #D9D9D9;          /* Industrial stainless tank gray for contact */
+
+      --font-title: "Mango Grotesk Title", Impact, "Arial Black", sans-serif;
+      --font-thin: "Mango Grotesk", "Arial Narrow", sans-serif;
+    }
+
+    /* ==========================================================================
+       03. BASE & RESET
+       ========================================================================== */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      background-color: var(--petrol);
+      color: var(--orange);
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    body {
+      background-color: var(--petrol);
+      font-family: var(--font-thin);
+      overflow-x: hidden;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container-faktory {
+      max-width: 1440px;
+      margin: 0 auto;
+      padding: 0 38px;
+    }
+
+    /* ==========================================================================
+       04. HEADER (1:1 Match to faktory_element_1.png)
+       Left Contact Stamp Box | Center FÀBRIKA Chalice Logo | Right MENÚ
+       ========================================================================== */
+    .fk-header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background-color: var(--petrol);
+      padding: 22px 38px 16px 38px;
+    }
+
+    /* Native Mango Grotesk Title Composite Spanish Glyphs (¿, Í, Ñ) */
+    .mg-inv-q {
+      display: inline-block;
+      transform: rotate(180deg) translateY(0.06em);
+      margin-right: 0.03em;
+    }
+
+    .mg-accent-i,
+    .mg-tilde-n {
+      position: relative;
+      display: inline-block;
+    }
+
+    .mg-accent-i::after {
+      content: "";
+      position: absolute;
+      top: -0.09em;
+      left: 50%;
+      width: 0.085em;
+      height: 0.12em;
+      background-color: currentColor;
+      transform: translateX(-35%) skewX(-24deg);
+    }
+
+    .mg-tilde-n::after {
+      content: "";
+      position: absolute;
+      top: -0.08em;
+      left: 12%;
+      width: 76%;
+      height: 0.06em;
+      background-color: currentColor;
+      border-radius: 2px;
+    }
+
+    .fk-header__inner {
+      max-width: 1440px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    /* Top-Left Technical Contact Box */
+    .fk-contact-stamp {
+      display: inline-flex;
+      flex-direction: column;
+      border: 1px solid var(--orange);
+      color: var(--orange);
+      transition: transform 0.25s ease, background-color 0.25s ease;
+    }
+
+    .fk-contact-stamp:hover {
+      background-color: rgba(255, 98, 51, 0.08);
+      transform: translateY(-1px);
+    }
+
+    .fk-contact-stamp__top {
+      display: grid;
+      grid-template-columns: 34px auto auto;
+      border-bottom: 1px solid var(--orange);
+      font-family: var(--font-thin);
+      font-size: 16px;
+      line-height: 1;
+      text-transform: uppercase;
+    }
+
+    .fk-contact-stamp__cell {
+      padding: 4px 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-right: 1px solid var(--orange);
+      white-space: nowrap;
+    }
+
+    .fk-contact-stamp__cell:last-child {
+      border-right: none;
+      font-family: var(--font-title);
+      font-size: 15px;
+      letter-spacing: 0.02em;
+    }
+
+    .fk-contact-stamp__bottom {
+      display: grid;
+      grid-template-columns: 1fr 56px;
+      align-items: center;
+    }
+
+    .fk-contact-stamp__word {
+      font-family: var(--font-title);
+      font-size: 44px;
+      line-height: 0.88;
+      padding: 6px 12px 2px 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.01em;
+      border-right: 1px solid var(--orange);
+    }
+
+    .fk-contact-stamp__icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 4px;
+    }
+
+    /* Center FÀBRIKA Geometric Logo with Integrated Beer Chalice */
+    .fk-logo {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      transition: transform 0.25s ease;
+    }
+
+    .fk-logo:hover {
+      transform: scale(1.03);
+    }
+
+    /* Right MENÚ Trigger */
+    .fk-menu-btn {
+      background: transparent;
+      border: none;
+      font-family: var(--font-title);
+      font-size: 56px;
+      line-height: 0.85;
+      color: var(--orange);
+      text-transform: uppercase;
+      cursor: pointer;
+      letter-spacing: 0.01em;
+      transition: opacity 0.2s ease, transform 0.2s ease;
+    }
+
+    .fk-menu-btn:hover {
+      opacity: 0.85;
+      transform: scale(1.03);
+    }
+
+    /* Fullscreen Menu Overlay (Burgundy #4D0007 from Faktory Live Site) */
+    .fk-menu-overlay {
+      position: fixed;
+      inset: 0;
+      background-color: var(--burgundy-dark);
+      z-index: 200;
+      display: none;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 32px 48px;
+    }
+
+    .fk-menu-overlay.open {
+      display: flex;
+    }
+
+    .fk-menu-overlay__list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin: auto 0;
+    }
+
+    .fk-menu-overlay__list a {
+      font-family: var(--font-title);
+      font-size: clamp(54px, 7vw, 96px);
+      line-height: 0.9;
+      color: var(--orange);
+      text-transform: uppercase;
+      transition: color 0.2s ease, padding-left 0.2s ease;
+    }
+
+    .fk-menu-overlay__list a:hover {
+      color: var(--cream);
+      padding-left: 18px;
+    }
+
+    /* ==========================================================================
+       05. HERO SECTION — "NOS VALEURS" / "NUESTROS VALORES" (faktory_element_1.png)
+       ========================================================================== */
+    .fk-hero {
+      padding: 28px 0 64px 0;
+    }
+
+    .fk-hero__grid {
+      display: grid;
+      grid-template-columns: 1.52fr 0.88fr;
+      gap: 42px;
+      align-items: end;
+    }
+
+    .fk-hero__display {
+      font-family: var(--font-title);
+      font-size: clamp(130px, 19.2vw, 276px);
+      line-height: 0.82;
+      color: var(--orange);
+      text-transform: uppercase;
+      letter-spacing: -0.01em;
+      user-select: none;
+    }
+
+    .fk-hero__display span {
+      display: block;
+    }
+
+    .fk-hero__photo-frame {
+      width: 100%;
+      height: 555px;
+      overflow: hidden;
+      background-color: #1A0502;
+    }
+
+    .fk-hero__photo-frame img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .fk-hero__photo-frame:hover img {
+      transform: scale(1.04);
+    }
+
+    /* ==========================================================================
+       06. MANIFESTO + ARCH PHOTO SECTION (faktory_element_1 & 2)
+       ========================================================================== */
+    .fk-manifesto {
+      padding: 36px 0 74px 0;
+    }
+
+    .fk-manifesto__grid {
+      display: grid;
+      grid-template-columns: 365px 1fr;
+      gap: 64px;
+      align-items: start;
+    }
+
+    /* Arch / Pill Rounded Image on Left */
+    .fk-arch-photo {
+      width: 365px;
+      height: 540px;
+      border-radius: 185px 185px 95px 95px;
+      overflow: hidden;
+      background-color: var(--petrol-deep);
+      flex-shrink: 0;
+    }
+
+    .fk-arch-photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    /* Tall Thin Mango Grotesk Manifesto on Right */
+    .fk-manifesto__text {
+      font-family: var(--font-thin);
+      font-size: clamp(46px, 5.55vw, 79px);
+      line-height: 0.96;
+      color: var(--orange-soft);
+      text-transform: uppercase;
+      letter-spacing: 0.01em;
+    }
+
+    .fk-manifesto__text strong {
+      font-family: var(--font-title);
+      font-weight: 400;
+      color: var(--orange);
+      letter-spacing: 0.015em;
+    }
+
+    /* ==========================================================================
+       07. TRIPLE COUNTER STRIP (14 | 28 | 1) + NEON BREWER PORTRAIT
+       (1:1 Match to faktory_element_2.png)
+       ========================================================================== */
+    .fk-counters {
+      padding: 16px 0 90px 0;
+    }
+
+    .fk-counters__grid {
+      display: grid;
+      grid-template-columns: 1fr 370px;
+      gap: 44px;
+      align-items: stretch;
+    }
+
+    .fk-counters__table {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      border-top: 1.5px solid var(--orange);
+      border-bottom: 1.5px solid var(--orange);
+    }
+
+    .fk-counters__numbers-row {
+      display: grid;
+      grid-template-columns: 1fr 1.35fr 0.9fr;
+      align-items: center;
+      padding: 22px 0 12px 0;
+    }
+
+    .fk-counter-cell {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+
+    .fk-counter-cell:not(:last-child)::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 12%;
+      bottom: 12%;
+      width: 1.5px;
+      background-color: var(--orange);
+    }
+
+    .fk-counter-num {
+      font-family: var(--font-title);
+      font-size: clamp(120px, 15.8vw, 226px);
+      line-height: 0.82;
+      color: var(--orange);
+      text-transform: uppercase;
+    }
+
+    .fk-counters__labels-row {
+      display: grid;
+      grid-template-columns: 1fr 1.35fr 0.9fr;
+      border-top: 1.5px solid var(--orange);
+      padding: 14px 0 12px 0;
+      align-items: center;
+    }
+
+    .fk-counter-label {
+      font-family: var(--font-thin);
+      font-size: clamp(26px, 2.9vw, 42px);
+      line-height: 0.95;
+      color: var(--orange-soft);
+      text-transform: uppercase;
+      text-align: center;
+      position: relative;
+      letter-spacing: 0.02em;
+    }
+
+    .fk-counter-label:not(:last-child)::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 10%;
+      bottom: 10%;
+      width: 1.5px;
+      background-color: var(--orange);
+    }
+
+    .fk-neon-portrait {
+      width: 370px;
+      height: 370px;
+      border-radius: 28px;
+      overflow: hidden;
+      background-color: #140301;
+    }
+
+    .fk-neon-portrait img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    /* ==========================================================================
+       08. "¿QUÉ ES FÀBRIKA?" + TAPROOM SOCIAL COLLAGE (about_scroll_0..2.jpg)
+       ========================================================================== */
+    .fk-what-is {
+      padding: 30px 0 120px 0;
+      position: relative;
+    }
+
+    .fk-what-is__top {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 40px;
+      align-items: start;
+      margin-bottom: 36px;
+    }
+
+    .fk-what-is__title {
+      font-family: var(--font-title);
+      font-size: clamp(96px, 13.5vw, 192px);
+      line-height: 0.84;
+      color: var(--orange);
+      text-transform: uppercase;
+    }
+
+    .fk-what-is__wide-banner {
+      position: relative;
+      width: 100%;
+      height: 410px;
+      overflow: hidden;
+      margin-bottom: 28px;
+    }
+
+    .fk-what-is__wide-banner img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .fk-what-is__bottom {
+      display: grid;
+      grid-template-columns: 320px 1fr 340px;
+      gap: 38px;
+      align-items: start;
+    }
+
+    .fk-pill-thumb {
+      width: 300px;
+      height: 360px;
+      border-radius: 90px;
+      overflow: hidden;
+      margin-top: -90px;
+      position: relative;
+      z-index: 3;
+      border: 4px solid var(--petrol);
+    }
+
+    .fk-pill-thumb img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .fk-what-is__quote {
+      font-family: var(--font-thin);
+      font-size: clamp(38px, 4.2vw, 58px);
+      line-height: 0.98;
+      color: var(--orange-soft);
+      text-transform: uppercase;
+    }
+
+    .fk-terrace-card {
+      width: 100%;
+      height: 430px;
+      border-radius: 26px;
+      overflow: hidden;
+    }
+
+    .fk-terrace-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    /* ==========================================================================
+       09. ANGLED DIAGONAL MARQUEE RIBBON (1:1 Match to about_scroll_3.jpg)
+       ========================================================================== */
+    .fk-ribbon-stage {
+      position: relative;
+      background: linear-gradient(180deg, var(--petrol) 0%, var(--petrol) 50%, var(--orange) 50%, var(--orange) 100%);
+      padding: 65px 0;
+      overflow: hidden;
+    }
+
+    .fk-ribbon {
+      background-color: var(--cream);
+      color: var(--orange);
+      transform: rotate(-5.5deg) scale(1.08);
+      padding: 14px 0;
+      box-shadow: 0 18px 45px rgba(2, 20, 27, 0.38);
+    }
+
+    .fk-ribbon__subtrack {
+      display: flex;
+      align-items: center;
+      gap: 26px;
+      white-space: nowrap;
+      overflow: hidden;
+      padding: 8px 0;
+      font-family: var(--font-title);
+      font-size: 28px;
+      line-height: 1;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+      animation: marqueeLeft 26s linear infinite;
+    }
+
+    .fk-ribbon__subtrack--top {
+      border-bottom: 2px dashed var(--orange);
+    }
+
+    .fk-ribbon__subtrack--bottom {
+      border-top: 2px dashed var(--orange);
+      animation-direction: reverse;
+    }
+
+    .fk-ribbon__maintrack {
+      display: flex;
+      align-items: center;
+      gap: 36px;
+      white-space: nowrap;
+      overflow: hidden;
+      padding: 10px 0 4px 0;
+      font-family: var(--font-title);
+      font-size: clamp(92px, 12.5vw, 178px);
+      line-height: 0.84;
+      text-transform: uppercase;
+      color: var(--orange);
+      animation: marqueeLeft 18s linear infinite;
+    }
+
+    @keyframes marqueeLeft {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+
+    /* ==========================================================================
+       10. CHRONOLOGY / TIMELINE SECTION (1:1 Match to about_scroll_4..9.jpg)
+       Background: #FF6233 Burnt Tangerine | Ink: #780F18 Deep Burgundy
+       ========================================================================== */
+    .fk-chronology {
+      background-color: var(--orange);
+      color: var(--burgundy);
+      padding: 72px 0 96px 0;
+      position: relative;
+    }
+
+    /* Intro Collage (about_scroll_4.jpg) */
+    .fk-chrono-intro {
+      display: grid;
+      grid-template-columns: 1.38fr 0.92fr;
+      gap: 32px;
+      border-bottom: 2px solid var(--burgundy);
+      padding-bottom: 36px;
+      margin-bottom: 56px;
+    }
+
+    .fk-chrono-intro__left {
+      border-right: 1.5px solid var(--burgundy);
+      padding-right: 32px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .fk-chrono-headline-wrap {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .fk-chrono-row-1 {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+    }
+
+    .fk-chrono-badge {
+      width: 148px;
+      height: 132px;
+      border-radius: 18px;
+      overflow: hidden;
+      background-color: #120808;
+      flex-shrink: 0;
+    }
+
+    .fk-chrono-badge img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .fk-chrono-title {
+      font-family: var(--font-title);
+      font-size: clamp(72px, 9.2vw, 132px);
+      line-height: 0.84;
+      color: var(--burgundy);
+      text-transform: uppercase;
+    }
+
+    .fk-chrono-mid-collage {
+      display: grid;
+      grid-template-columns: 0.35fr 0.65fr 1fr;
+      gap: 22px;
+      align-items: end;
+      margin-top: 12px;
+    }
+
+    .fk-depuis-label {
+      font-family: var(--font-thin);
+      font-size: clamp(54px, 5.8vw, 82px);
+      line-height: 0.9;
+      color: var(--burgundy);
+      text-transform: uppercase;
+    }
+
+    .fk-bw-small {
+      width: 100%;
+      height: 165px;
+      overflow: hidden;
+      border-left: 1.5px solid var(--burgundy);
+      padding-left: 16px;
+    }
+
+    .fk-bw-small img,
+    .fk-bw-med img,
+    .fk-bw-tall img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .fk-bw-med {
+      width: 100%;
+      height: 305px;
+      overflow: hidden;
+      border-left: 1.5px solid var(--burgundy);
+      padding-left: 18px;
+    }
+
+    .fk-bw-tall {
+      width: 100%;
+      height: 605px;
+      overflow: hidden;
+    }
+
+    /* Bottom Banner: [ 2012 ] | FÀBRIKA DESDE DENTRO */
+    .fk-chrono-year-banner {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      margin-bottom: 64px;
+    }
+
+    .fk-year-inverted-box {
+      background-color: var(--burgundy);
+      color: var(--orange);
+      padding: 6px 34px 0 28px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .fk-year-inverted-box span {
+      font-family: var(--font-title);
+      font-size: clamp(86px, 10.5vw, 148px);
+      line-height: 0.84;
+      display: inline-block;
+      transform: skewX(-12deg);
+    }
+
+    .fk-year-banner-title {
+      font-family: var(--font-title);
+      font-size: clamp(78px, 9.8vw, 140px);
+      line-height: 0.84;
+      color: var(--burgundy);
+      text-transform: uppercase;
+      border-left: 4px solid var(--burgundy);
+      padding-left: 24px;
+    }
+
+    /* 3-Column Era Grid (about_scroll_6..9.jpg) */
+    .fk-eras-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1.15fr 36px;
+      gap: 0;
+      border-top: 2px solid var(--burgundy);
+      padding-top: 32px;
+    }
+
+    .fk-era-col {
+      padding: 0 28px;
+      border-right: 1.5px solid var(--burgundy);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .fk-era-col:first-child {
+      padding-left: 0;
+    }
+
+    .fk-era-years {
+      font-family: var(--font-thin);
+      font-size: clamp(64px, 6.8vw, 96px);
+      line-height: 0.9;
+      color: var(--burgundy);
+      text-transform: uppercase;
+      border-bottom: 2px solid var(--burgundy);
+      padding-bottom: 14px;
+      margin-bottom: 20px;
+    }
+
+    .fk-era-heading {
+      font-family: var(--font-title);
+      font-size: clamp(44px, 4.8vw, 68px);
+      line-height: 0.9;
+      color: var(--burgundy);
+      text-transform: uppercase;
+      border-bottom: 2px solid var(--burgundy);
+      padding-bottom: 18px;
+      margin-bottom: 20px;
+    }
+
+    .fk-era-body {
+      font-family: var(--font-thin);
+      font-size: clamp(28px, 2.8vw, 40px);
+      line-height: 0.98;
+      color: var(--burgundy);
+      text-transform: uppercase;
+      margin-bottom: 24px;
+    }
+
+    .fk-era-photo {
+      width: 100%;
+      height: 340px;
+      overflow: hidden;
+      margin-top: auto;
+    }
+
+    .fk-era-photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    /* Horizontal Barcode Stripes (about_scroll_6.jpg bottom left) */
+    .fk-barcode-horiz {
+      height: 24px;
+      margin-top: 22px;
+      background: repeating-linear-gradient(
+        90deg,
+        var(--burgundy) 0px,
+        var(--burgundy) 8px,
+        transparent 8px,
+        transparent 16px
+      );
+    }
+
+    /* Vertical Barcode Column on Far Right (about_scroll_9.jpg) */
+    .fk-barcode-vert {
+      width: 100%;
+      height: 100%;
+      min-height: 620px;
+      background: repeating-linear-gradient(
+        180deg,
+        var(--burgundy) 0px,
+        var(--burgundy) 7px,
+        transparent 7px,
+        transparent 14px
+      );
+    }
+
+    /* ==========================================================================
+       11. DEEP BURGUNDY CELLAR TAPLIST BAND (#4D0007 Background)
+       ========================================================================== */
+    .fk-cellar-band {
+      background-color: var(--burgundy-dark);
+      color: var(--orange);
+      padding: 88px 0;
+    }
+
+    .fk-cellar-header {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      border-bottom: 1.5px solid var(--orange);
+      padding-bottom: 24px;
+      margin-bottom: 36px;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .fk-cellar-title {
+      font-family: var(--font-title);
+      font-size: clamp(68px, 8.5vw, 122px);
+      line-height: 0.85;
+      text-transform: uppercase;
+      color: var(--orange);
+    }
+
+    .fk-cellar-sub {
+      font-family: var(--font-thin);
+      font-size: 36px;
+      line-height: 0.95;
+      color: var(--cream);
+      text-transform: uppercase;
+    }
+
+    .fk-tap-row {
+      display: grid;
+      grid-template-columns: 90px 1.5fr 1fr 140px;
+      align-items: center;
+      padding: 22px 0;
+      border-bottom: 1px solid rgba(255, 98, 51, 0.35);
+      transition: padding-left 0.25s ease, background-color 0.25s ease;
+    }
+
+    .fk-tap-row:hover {
+      padding-left: 16px;
+      background-color: rgba(255, 98, 51, 0.07);
+    }
+
+    .fk-tap-num {
+      font-family: var(--font-title);
+      font-size: 56px;
+      line-height: 0.85;
+      color: var(--orange);
+    }
+
+    .fk-tap-name {
+      font-family: var(--font-title);
+      font-size: clamp(38px, 4.2vw, 58px);
+      line-height: 0.9;
+      color: var(--cream);
+      text-transform: uppercase;
+    }
+
+    .fk-tap-notes {
+      font-family: var(--font-thin);
+      font-size: 30px;
+      color: var(--orange-soft);
+      text-transform: uppercase;
+    }
+
+    .fk-tap-abv {
+      font-family: var(--font-title);
+      font-size: 44px;
+      color: var(--orange);
+      text-align: right;
+    }
+
+    /* ==========================================================================
+       12. JOIN THE TEAM SECTION (1:1 Match to faktory_live_about.png)
+       Background: #F4E9ED Foam Cream | Ink: #FF6233 & #FF7657
+       ========================================================================== */
+    .fk-join {
+      background-color: var(--cream);
+      color: var(--orange);
+      padding: 96px 0;
+    }
+
+    .fk-join__title {
+      font-family: var(--font-title);
+      font-size: clamp(64px, 8.2vw, 118px);
+      line-height: 0.88;
+      color: var(--orange);
+      text-transform: uppercase;
+      margin-bottom: 32px;
+      max-width: 1180px;
+    }
+
+    .fk-join__roles {
+      font-family: var(--font-thin);
+      font-size: clamp(42px, 5.2vw, 74px);
+      line-height: 0.98;
+      color: var(--orange-soft);
+      text-transform: uppercase;
+      max-width: 1080px;
+    }
+
+    /* ==========================================================================
+       13. CONTACT US SECTION (1:1 Match to faktory_live_about.png)
+       Background: #D9D9D9 Inox Gray | Ink: #0B252F Petrol
+       ========================================================================== */
+    .fk-contact-section {
+      background-color: var(--silver);
+      color: var(--petrol);
+      padding: 84px 0;
+    }
+
+    .fk-contact-grid {
+      display: grid;
+      grid-template-columns: 1.35fr 0.65fr;
+      gap: 48px;
+      min-height: 460px;
+    }
+
+    .fk-contact-left {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding-right: 36px;
+    }
+
+    .fk-contact-heading {
+      font-family: var(--font-title);
+      font-size: clamp(48px, 5.5vw, 78px);
+      line-height: 0.9;
+      color: var(--petrol);
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+
+    .fk-contact-sub {
+      font-family: var(--font-thin);
+      font-size: 26px;
+      color: var(--petrol);
+      text-transform: uppercase;
+    }
+
+    .fk-contact-form {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 22px;
+      margin: 36px 0;
+      max-width: 680px;
+    }
+
+    .fk-input {
+      background: transparent;
+      border: none;
+      border-bottom: 1.5px solid var(--petrol);
+      padding: 12px 0;
+      font-family: var(--font-thin);
+      font-size: 26px;
+      color: var(--petrol);
+      text-transform: uppercase;
+      outline: none;
+    }
+
+    .fk-input::placeholder {
+      color: rgba(11, 37, 47, 0.58);
+    }
+
+    .fk-input--full {
+      grid-column: span 2;
+    }
+
+    .fk-submit-btn {
+      grid-column: span 2;
+      justify-self: start;
+      background-color: var(--petrol);
+      color: var(--orange);
+      border: none;
+      font-family: var(--font-title);
+      font-size: 34px;
+      padding: 10px 32px 6px 32px;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: background-color 0.2s ease, color 0.2s ease;
+    }
+
+    .fk-submit-btn:hover {
+      background-color: var(--orange);
+      color: var(--petrol);
+    }
+
+    .fk-contact-legal {
+      font-family: var(--font-thin);
+      font-size: 18px;
+      line-height: 1.15;
+      color: rgba(11, 37, 47, 0.72);
+      max-width: 520px;
+      text-transform: uppercase;
+    }
+
+    .fk-contact-right {
+      border-left: 1.5px solid var(--petrol);
+      padding-left: 44px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+    }
+
+    .fk-social-label {
+      font-family: var(--font-title);
+      font-size: 22px;
+      color: var(--petrol);
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+
+    .fk-social-giant {
+      font-family: var(--font-thin);
+      font-size: clamp(64px, 7.5vw, 104px);
+      line-height: 0.88;
+      color: var(--petrol);
+      text-transform: uppercase;
+      border-bottom: 2px solid var(--petrol);
+      display: inline-block;
+      padding-bottom: 4px;
+      transition: color 0.2s ease, border-color 0.2s ease;
+    }
+
+    .fk-social-giant:hover {
+      color: var(--orange);
+      border-color: var(--orange);
+    }
+
+    /* ==========================================================================
+       14. FOOTER (1:1 Match to faktory_live_about.png)
+       Background: #0B252F Petrol | Ink: #FF6233 Orange
+       ========================================================================== */
+    .fk-footer {
+      background-color: var(--petrol);
+      color: var(--orange);
+      padding: 84px 0 36px 0;
+      text-align: center;
+    }
+
+    .fk-footer__title {
+      font-family: var(--font-title);
+      font-size: clamp(64px, 8.4vw, 120px);
+      line-height: 0.86;
+      color: var(--orange);
+      text-transform: uppercase;
+    }
+
+    .fk-footer__hashtags {
+      font-family: var(--font-title);
+      font-size: 24px;
+      letter-spacing: 0.04em;
+      color: var(--orange-soft);
+      text-transform: uppercase;
+      margin-top: 6px;
+      margin-bottom: 54px;
+    }
+
+    .fk-footer__bottom {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-top: 1px solid rgba(255, 98, 51, 0.28);
+      padding-top: 22px;
+      font-family: var(--font-title);
+      font-size: 20px;
+      color: var(--orange);
+      text-transform: uppercase;
+    }
+
+    /* ==========================================================================
+       15. RESPONSIVE DESIGN
+       ========================================================================== */
+    @media (max-width: 1024px) {
+      .fk-hero__grid,
+      .fk-manifesto__grid,
+      .fk-counters__grid,
+      .fk-what-is__top,
+      .fk-what-is__bottom,
+      .fk-chrono-intro,
+      .fk-eras-grid,
+      .fk-contact-grid {
+        grid-template-columns: 1fr;
+      }
+      .fk-chrono-intro__left,
+      .fk-era-col {
+        border-right: none;
+        padding-right: 0;
+        padding-left: 0;
+        border-bottom: 1.5px solid var(--burgundy);
+        padding-bottom: 32px;
+        margin-bottom: 32px;
+      }
+      .fk-barcode-vert {
+        display: none;
+      }
+      .fk-contact-right {
+        border-left: none;
+        padding-left: 0;
+      }
+      .fk-pill-thumb {
+        margin-top: 0;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .container-faktory,
+      .fk-header {
+        padding-left: 18px;
+        padding-right: 18px;
+      }
+      .fk-contact-stamp__top {
+        display: none;
+      }
+      .fk-contact-stamp__word {
+        font-size: 28px;
+      }
+      .fk-menu-btn {
+        font-size: 38px;
+      }
+      .fk-tap-row {
+        grid-template-columns: 1fr;
+        gap: 6px;
+      }
+      .fk-tap-abv {
+        text-align: left;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ========================================================================
+       FULLSCREEN BURGUNDY MENU OVERLAY (Interactive)
+       ======================================================================== -->
+  <div id="menuOverlay" class="fk-menu-overlay">
+    <div style="display: flex; justify-content: space-between; align-items: center;">
+      <span style="font-family: var(--font-title); font-size: 36px; color: var(--orange);">FÀBRIKA · BARCELONA</span>
+      <button class="fk-menu-btn" onclick="document.getElementById('menuOverlay').classList.remove('open')">CERRAR ✕</button>
+    </div>
+    <ul class="fk-menu-overlay__list" onclick="document.getElementById('menuOverlay').classList.remove('open')">
+      <li><a href="#valores">01 · Nuestros Valores</a></li>
+      <li><a href="#manifiesto">02 · Manifiesto Cervecero</a></li>
+      <li><a href="#cronologia">03 · Cronología (Desde 2012)</a></li>
+      <li><a href="#grifos">04 · Los 14 Grifos del Poblenou</a></li>
+      <li><a href="#equipo">05 · Únete a la Team Fàbrika</a></li>
+      <li><a href="#contacto">06 · Reservas &amp; Barriles</a></li>
+    </ul>
+    <div style="font-family: var(--font-thin); font-size: 28px; color: var(--cream); text-transform: uppercase;">
+      CARRER DELS ALMOGÀVERS 148 · EL POBLENOU, 08018 BARCELONA · HOLA@FABRIKABCN.CAT
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       01. HEADER (1:1 Match to faktory_element_1.png)
+       ======================================================================== -->
+  <header class="fk-header">
+    <div class="fk-header__inner">
+
+      <!-- Left: Technical Contact Stamp Box with Craft Pint Line-Art SVG -->
+      <a href="#contacto" class="fk-contact-stamp">
+        <div class="fk-contact-stamp__top">
+          <div class="fk-contact-stamp__cell">←</div>
+          <div class="fk-contact-stamp__cell">HOLA@FABRIKABCN.CAT</div>
+          <div class="fk-contact-stamp__cell">93 485 21 09</div>
+        </div>
+        <div class="fk-contact-stamp__bottom">
+          <div class="fk-contact-stamp__word">CONTACTO</div>
+          <div class="fk-contact-stamp__icon">
+            <!-- Custom Craft Beer Mug & Foam Line-Art SVG in #FF6233 -->
+            <svg width="38" height="36" viewBox="0 0 42 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M9 14H29V33C29 35.2091 27.2091 37 25 37H13C10.7909 37 9 35.2091 9 33V14Z" stroke="#FF6233" stroke-width="1.5"/>
+              <path d="M29 17H34C35.6569 17 37 18.3431 37 20V27C37 28.6569 35.6569 30 34 30H29" stroke="#FF6233" stroke-width="1.5"/>
+              <path d="M8 11C8 8.79086 9.79086 7 12 7C12.8 7 13.5 7.2 14.1 7.6C15.1 5.5 17.2 4 19.7 4C22.4 4 24.7 5.7 25.5 8.1C26.1 7.8 26.8 7.6 27.5 7.6C29.7 7.6 31.5 9.4 31.5 11.6C31.5 12.9 30.8 14 29.8 14.7H8.8C8.3 13.6 8 12.3 8 11Z" stroke="#FF6233" stroke-width="1.5"/>
+              <line x1="14" y1="19" x2="14" y2="32" stroke="#FF6233" stroke-width="1.3"/>
+              <line x1="19" y1="19" x2="19" y2="32" stroke="#FF6233" stroke-width="1.3"/>
+              <line x1="24" y1="19" x2="24" y2="32" stroke="#FF6233" stroke-width="1.3"/>
+            </svg>
+          </div>
+        </div>
+      </a>
+
+      <!-- Center: Custom FÀBRIKA Geometric Emblem with Chalice O/I and Double Underline Bars -->
+      <a href="#" class="fk-logo" aria-label="Fàbrika Barcelona Home">
+        <svg width="215" height="68" viewBox="0 0 215 68" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <!-- Geometric FÀBRIKA Letters in #FF6233 matching FAKTORY logo style -->
+          <text x="4" y="45" fill="#FF6233" font-family="'Mango Grotesk Title', Impact, sans-serif" font-size="52" letter-spacing="2">FÀBR</text>
+          <!-- Center Chalice / Goblet Icon replacing the middle letter (just like the O goblet in FAKTORY) -->
+          <path d="M98 11H120V25C120 31.0751 115.075 36 109 36C102.925 36 98 31.0751 98 25V11Z" stroke="#FF6233" stroke-width="4.5" fill="none"/>
+          <line x1="109" y1="36" x2="109" y2="57" stroke="#FF6233" stroke-width="4.5"/>
+          <line x1="99" y1="57" x2="119" y2="57" stroke="#FF6233" stroke-width="4.5"/>
+          <text x="126" y="45" fill="#FF6233" font-family="'Mango Grotesk Title', Impact, sans-serif" font-size="52" letter-spacing="2">KA</text>
+          <!-- Left & Right Thick Underline Bars -->
+          <rect x="4" y="54" width="86" height="5" fill="#FF6233"/>
+          <rect x="126" y="54" width="84" height="5" fill="#FF6233"/>
+        </svg>
+      </a>
+
+      <!-- Right: Giant MENÚ Trigger -->
+      <button class="fk-menu-btn" onclick="document.getElementById('menuOverlay').classList.add('open')">
+        MENÚ
+      </button>
+
+    </div>
+  </header>
+
+  <!-- ========================================================================
+       02. HERO SECTION — "NUESTROS VALORES" (1:1 Match to faktory_element_1.png)
+       ======================================================================== -->
+  <main>
+    <section id="valores" class="fk-hero">
+      <div class="container-faktory">
+        <div class="fk-hero__grid">
+
+          <!-- Monumental Stacked Display Typography -->
+          <h1 class="fk-hero__display">
+            <span>NUESTROS</span>
+            <span>VALORES</span>
+          </h1>
+
+          <!-- Right Copper-Amber Backlit Craft Pint Pour Photo -->
+          <div class="fk-hero__photo-frame">
+            <img
+              src="assets/brew_hero_glass.png"
+              alt="Tirada de cerveza artesanal en Fàbrika Barcelona bajo luz ámbar"
+            />
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         03. MANIFESTO + ARCH PHOTO SECTION (1:1 Match to faktory_element_1 & 2)
+         ====================================================================== -->
+    <section id="manifiesto" class="fk-manifesto">
+      <div class="container-faktory">
+        <div class="fk-manifesto__grid">
+
+          <!-- Left Arch Image (Starry Petrol Night + Copper Brewing Glow) -->
+          <div class="fk-arch-photo">
+            <img
+              src="assets/brew_arch_hops.png"
+              alt="Noche estrellada y malta tostada en El Poblenou"
+            />
+          </div>
+
+          <!-- Right Tall Thin Mango Grotesk Manifesto -->
+          <p class="fk-manifesto__text">
+            EN <strong>FÀBRIKA</strong>, CREAMOS ESPACIOS DE CONVIVENCIA PARA ENCONTRARSE ALREDEDOR DE UNA CAÑA RECIÉN TIRADA, DE UN BRUNCH DE BRASA, DE UN APERITIVO AL SOL DEL POBLENOU, DE UNA CENA ENTRE AMIGOS, DE UNA NOCHE FESTIVA Y MUCHO MÁS : EL SER HUMANO ESTÁ HECHO PARA REUNIRSE, FÀBRIKA ESTÁ AQUÍ PARA DESTILAR EL LUGAR PERFECTO.
+          </p>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         04. TRIPLE COUNTER STRIP (14 | 28 | 1) + NEON BREWER PORTRAIT
+         (1:1 Match to faktory_element_2.png)
+         ====================================================================== -->
+    <section class="fk-counters">
+      <div class="container-faktory">
+        <div class="fk-counters__grid">
+
+          <!-- Left: 3 Giant Numbers with Orange Dividers -->
+          <div class="fk-counters__table">
+            <div class="fk-counters__numbers-row">
+              <div class="fk-counter-cell">
+                <span class="fk-counter-num">14</span>
+              </div>
+              <div class="fk-counter-cell">
+                <span class="fk-counter-num">28</span>
+              </div>
+              <div class="fk-counter-cell">
+                <span class="fk-counter-num">1</span>
+              </div>
+            </div>
+
+            <div class="fk-counters__labels-row">
+              <div class="fk-counter-label">CAÑEROS DIRECTOS</div>
+              <div class="fk-counter-label">IDEAS POR MINUTO</div>
+              <div class="fk-counter-label">OVNI</div>
+            </div>
+          </div>
+
+          <!-- Right: Rounded Square Neon Light-Trail Brewer Portrait -->
+          <div class="fk-neon-portrait">
+            <img
+              src="assets/brew_neon_brewer.png"
+              alt="Retrato de luz neón del maestro cervecero de Fàbrika"
+            />
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         05. "¿QUÉ ES FÀBRIKA?" + TAPROOM COLLAGE (about_scroll_0..2.jpg)
+         ====================================================================== -->
+    <section class="fk-what-is">
+      <div class="container-faktory">
+
+        <div class="fk-what-is__top">
+          <h2 class="fk-what-is__title">
+            FÀBRIKA<br />
+            <span class="mg-inv-q">?</span>QUÉ<br />
+            SOMOS ?
+          </h2>
+          <div class="fk-terrace-card" style="height: 460px;">
+            <img src="assets/brew_timeline_3.png" alt="Brindis de cerveza artesana en terraza de Barcelona" />
+          </div>
+        </div>
+
+        <div class="fk-what-is__wide-banner">
+          <img src="assets/brew_taproom_wide.png" alt="Mesas largas de madera en la nave industrial de Fàbrika Poblenou" />
+        </div>
+
+        <div class="fk-what-is__bottom">
+          <div class="fk-pill-thumb">
+            <img src="assets/brew_terrace_facade.png" alt="Terraza al sol en El Poblenou" />
+          </div>
+
+          <p class="fk-what-is__quote">
+            EL SER HUMANO NECESITA COMPARTIR, FÀBRIKA LE DA UNA DIRECCIÓN EN BARCELONA (Y UNA BARRA DE COBRE).
+          </p>
+
+          <div class="fk-terrace-card">
+            <img src="assets/brew_hero_glass.png" alt="Cerveza sin filtrar recién tirada" />
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         06. ANGLED DIAGONAL MARQUEE RIBBON (1:1 Match to about_scroll_3.jpg)
+         ====================================================================== -->
+    <div class="fk-ribbon-stage">
+      <div class="fk-ribbon">
+        <!-- Top Dashed Sub-Track -->
+        <div class="fk-ribbon__subtrack fk-ribbon__subtrack--top">
+          <span>— LA FÁBRICA — 🍺 — <span class="mg-inv-q">?</span>QUIÉNES SOMOS ? — 🥨 — EL POBLENOU BCN — 🌾 — LA FÁBRICA — 🍺 — <span class="mg-inv-q">?</span>QUIÉNES SOMOS ? — 🥨 — EL POBLENOU BCN — 🌾 — LA FÁBRICA — 🍺 — <span class="mg-inv-q">?</span>QUIÉNES SOMOS ? —</span>
+        </div>
+
+        <!-- Center Giant Display Track -->
+        <div class="fk-ribbon__maintrack">
+          <span>- FÀBRIKA - FÀBRIKA - FÀBRIKA - FÀBRIKA - FÀBRIKA - FÀBRIKA - FÀBRIKA - FÀBRIKA -</span>
+        </div>
+
+        <!-- Bottom Dashed Sub-Track -->
+        <div class="fk-ribbon__subtrack fk-ribbon__subtrack--bottom">
+          <span>— CULTURA L<span class="mg-accent-i">I</span>QUIDA — 🍻 — <span class="mg-inv-q">?</span>QUIÉNES SOMOS ? — 🔥 — BRASA &amp; LÚPULO — 🍺 — CULTURA L<span class="mg-accent-i">I</span>QUIDA — 🍻 — <span class="mg-inv-q">?</span>QUIÉNES SOMOS ? — 🔥 — BRASA &amp; LÚPULO — 🍺 — CULTURA L<span class="mg-accent-i">I</span>QUIDA —</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ======================================================================
+         07. CHRONOLOGY SECTION (1:1 Match to about_scroll_4..9.jpg)
+         Background: #FF6233 Burnt Tangerine | Ink: #780F18 Deep Burgundy
+         ====================================================================== -->
+    <section id="cronologia" class="fk-chronology">
+      <div class="container-faktory">
+
+        <!-- Intro Block (about_scroll_4.jpg) -->
+        <div class="fk-chrono-intro">
+          <div class="fk-chrono-intro__left">
+            <div class="fk-chrono-headline-wrap">
+              <div class="fk-chrono-row-1">
+                <div class="fk-chrono-badge">
+                  <img src="assets/brew_hop_badge.png" alt="Sello gastronómico y cervecero" />
+                </div>
+                <span class="fk-chrono-title">CRONOLOG<span class="mg-accent-i">I</span>A</span>
+              </div>
+              <div class="fk-chrono-title">DE UNA AVENTURA</div>
+              <div class="fk-chrono-title">HUMANA</div>
+            </div>
+
+            <div class="fk-chrono-mid-collage">
+              <div class="fk-depuis-label">DESDE</div>
+              <div class="fk-bw-small">
+                <img src="assets/brew_vintage_1.png" alt="Inauguración de la primera nave en 2012" />
+              </div>
+              <div class="fk-bw-med">
+                <img src="assets/brew_vintage_2.png" alt="Primeros maestros cerveceros en Poblenou" />
+              </div>
+            </div>
+          </div>
+
+          <div class="fk-bw-tall">
+            <img src="assets/brew_vintage_3.png" alt="Celebración histórica en la bodega de fermentación" />
+          </div>
+        </div>
+
+        <!-- Year Banner: [ 2012 ] | FÀBRIKA DESDE DENTRO -->
+        <div class="fk-chrono-year-banner">
+          <div class="fk-year-inverted-box">
+            <span>2012</span>
+          </div>
+          <h2 class="fk-year-banner-title">FÀBRIKA DESDE DENTRO</h2>
+        </div>
+
+        <!-- 3-Column Era Timeline + Right Barcode (about_scroll_6..9.jpg) -->
+        <div class="fk-eras-grid">
+
+          <!-- Era 1: 2012-2016 -->
+          <div class="fk-era-col">
+            <div>
+              <div class="fk-era-years">2012-2016</div>
+              <h3 class="fk-era-heading">LA NAVE CREATIVA DEL POBLENOU</h3>
+              <p class="fk-era-body">
+                LA AVENTURA TOMA FORMA EN UN ANTIGUO TALLER TEXTIL DE ALMOGÀVERS : TRES FERMENTADORES DE SEGUNDA MANO, UNA COCINA DE LEÑA Y LA OBSESIÓN DE CREAR UN LUGAR DONDE LOS VECINOS DE BARCELONA SE SIENTAN COMO EN CASA.
+              </p>
+            </div>
+            <div>
+              <div class="fk-era-photo">
+                <img src="assets/brew_timeline_1.png" alt="Noches en vivo en el taproom original 2014" />
+              </div>
+              <div class="fk-barcode-horiz" aria-hidden="true"></div>
+            </div>
+          </div>
+
+          <!-- Era 2: 2016-2021 -->
+          <div class="fk-era-col">
+            <div>
+              <div class="fk-era-years">2016-2021</div>
+              <h3 class="fk-era-heading">EL LÚPULO EN EL CORAZÓN DE NUESTRA ACTIVIDAD</h3>
+              <p class="fk-era-body">
+                MÁS DE 20 RECETAS PROPIAS VEN LA LUZ EN LA CAPITAL CATALANA. NUESTROS EQUIPOS CRECEN, ABRIMOS LA BODEGA DE BARRICAS Y EL PATIO DE BRASA, MANTENIENDO SIEMPRE ESA PASIÓN COMÚN : HACER DE CADA TRAGO UN MOMENTO ÚNICO.
+              </p>
+            </div>
+            <div class="fk-era-photo" style="height: 420px;">
+              <img src="assets/brew_timeline_2.png" alt="El equipo de Fàbrika asomado a la ventana de la fábrica" />
+            </div>
+          </div>
+
+          <!-- Era 3: DE 2021 A HOY -->
+          <div class="fk-era-col">
+            <div>
+              <div class="fk-era-years">DE 2021 A HOY</div>
+              <h3 class="fk-era-heading">
+                14 A<span class="mg-tilde-n">N</span>OS DE HISTORIA COLECTIVA · 85 APASIONADOS
+              </h3>
+              <p class="fk-era-body">
+                DE LOS TANQUES DE COCCIÓN A LA BARRA, DE LAS BRASAS A LOS FESTIVALES, CADA ARTESANO ESCRIBE UNA PÁGINA DE NUESTRA HISTORIA. ¿QUÉ NOS UNE ? LAS GANAS DE IR MÁS LEJOS PARA HACER VIBRAR BARCELONA CADA NOCHE.
+              </p>
+            </div>
+            <div class="fk-era-photo">
+              <img src="assets/brew_timeline_3.png" alt="Comunidad y eventos en Fàbrika Barcelona hoy" />
+            </div>
+          </div>
+
+          <!-- Right Vertical Barcode Strip -->
+          <div class="fk-barcode-vert" aria-hidden="true"></div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         08. DEEP BURGUNDY CELLAR TAPLIST BAND (#4D0007 Background)
+         ====================================================================== -->
+    <section id="grifos" class="fk-cellar-band">
+      <div class="container-faktory">
+        <div class="fk-cellar-header">
+          <h2 class="fk-cellar-title">DIRECTO DEL TANQUE</h2>
+          <span class="fk-cellar-sub">TIRADA FRESCA SIN PASTEURIZAR · EL POBLENOU</span>
+        </div>
+
+        <div class="fk-tap-row">
+          <span class="fk-tap-num">01</span>
+          <span class="fk-tap-name">POBLENOU HAZY IPA</span>
+          <span class="fk-tap-notes">CITRA · MOSAIC · MANGO TROPICAL &amp; RESINA</span>
+          <span class="fk-tap-abv">6.4% VOL</span>
+        </div>
+
+        <div class="fk-tap-row">
+          <span class="fk-tap-num">02</span>
+          <span class="fk-tap-name">RAVAL TORRADA MÄRZEN</span>
+          <span class="fk-tap-notes">DOBLE MALTA TOSTADA · CORTEZA DE PAN &amp; COBRE</span>
+          <span class="fk-tap-abv">5.6% VOL</span>
+        </div>
+
+        <div class="fk-tap-row">
+          <span class="fk-tap-num">03</span>
+          <span class="fk-tap-name">LLULL SOUR MARACUYÁ</span>
+          <span class="fk-tap-notes">FERMENTACIÓN SALVAJE · FRUTA DE LA PASIÓN</span>
+          <span class="fk-tap-abv">4.8% VOL</span>
+        </div>
+
+        <div class="fk-tap-row">
+          <span class="fk-tap-num">04</span>
+          <span class="fk-tap-name">BARCELONETA NITRO STOUT</span>
+          <span class="fk-tap-notes">CACAO PURO · CAFÉ ESPRESSO &amp; ESPUMA CREMOSA</span>
+          <span class="fk-tap-abv">7.2% VOL</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         09. JOIN THE TEAM SECTION (1:1 Match to faktory_live_about.png)
+         Background: #F4E9ED Cream | Ink: #FF6233 & #FF7657
+         ====================================================================== -->
+    <section id="equipo" class="fk-join">
+      <div class="container-faktory">
+        <h2 class="fk-join__title">
+          ÚNETE A LA TEAM FÀBRIKA,<br />
+          CANDIDATURA ESPONTÁNEA.
+        </h2>
+        <p class="fk-join__roles">
+          MAESTRO CERVECERO / TIRADOR DE BARRA / JEFE DE BRASA / COMERCIAL DE BARRILES / SUMILLER DE LÚPULO / JEFE DE COCINA
+        </p>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         10. CONTACT US SECTION (1:1 Match to faktory_live_about.png)
+         Background: #D9D9D9 Inox Gray | Ink: #0B252F Petrol
+         ====================================================================== -->
+    <section id="contacto" class="fk-contact-section">
+      <div class="container-faktory">
+        <div class="fk-contact-grid">
+
+          <!-- Left Column -->
+          <div class="fk-contact-left">
+            <div>
+              <h2 class="fk-contact-heading">CONTÁCTANOS</h2>
+              <p class="fk-contact-sub">Para todas tus solicitudes (excepto reservas de última hora)</p>
+
+              <form class="fk-contact-form" onsubmit="event.preventDefault(); this.querySelector('button').textContent = '¡MENSAJE ENVIADO A LA FÁBRICA!';">
+                <input type="text" class="fk-input" placeholder="NOMBRE Y APELLIDOS *" required />
+                <input type="email" class="fk-input" placeholder="CORREO ELECTRÓNICO *" required />
+                <input type="tel" class="fk-input" placeholder="TELÉFONO *" />
+                <input type="text" class="fk-input" placeholder="MOTIVO (EVENTO PRIVADO / CATA / BARRILES)" />
+                <input type="text" class="fk-input fk-input--full" placeholder="CUÉNTANOS QUÉ TIENES EN MENTE..." required />
+                <button type="submit" class="fk-submit-btn">ENVIAR SOLICITUD →</button>
+              </form>
+            </div>
+
+            <p class="fk-contact-legal">
+              Cervecería Fàbrika Poblenou recopila tus datos únicamente para gestionar tu consulta de evento o reserva en nuestros espacios de Barcelona, conforme al RGPD.
+            </p>
+          </div>
+
+          <!-- Right Column -->
+          <div class="fk-contact-right">
+            <span class="fk-social-label">S<span class="mg-accent-i">I</span>GUENOS EN LAS REDES SOCIALES :</span>
+            <div>
+              <a href="#contacto" class="fk-social-giant">INSTAGRAM</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================================================================
+       11. FOOTER (1:1 Match to faktory_live_about.png)
+       ======================================================================== -->
+  <footer class="fk-footer">
+    <div class="container-faktory">
+      <h2 class="fk-footer__title">MANTENGÁMONOS CONECTADOS</h2>
+      <p class="fk-footer__hashtags">#EVENTOS #CERVECERIA #RECETAS #BARCELONA</p>
+
+      <div class="fk-footer__bottom">
+        <span>© 2026 FÀBRIKA BARCELONA</span>
+        <span>CARRER DELS ALMOGÀVERS 148 · POBLENOU</span>
+        <span>AVISO LEGAL · PRIVACIDAD</span>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

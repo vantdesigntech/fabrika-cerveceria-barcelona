@@ -1,0 +1,4 @@
+node_modules/
+dist/
+verify_*.png
+verify_design.py
